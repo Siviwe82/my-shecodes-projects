@@ -9,9 +9,6 @@ function formatDate(timestamp) {
 
 
 
-
-
-
 function displayTemperature(response) {
   console.log(response.date.main.temp); 
   let temperatureElement = document.querySelector("#temperature");
