@@ -1,7 +1,7 @@
 function displayTemperature(response) {
-  console.log(response.date.main.temp); 
+  console.log(response.date.main.temp);
   let temperatureElement = document.querySelector("#temperature");
-  let cityElement = document.querySelector("#city")
+  let cityElement = document.querySelector("#city");
   let descriptionElement = document.querySelector("#description");
   let humidityElement = document.querySelector("#humidity");
   let windElement = document.querySelector("#wind");
@@ -12,10 +12,7 @@ function displayTemperature(response) {
   windElement.innerHTML = Math.round(response.data.wind.speed);
 }
 
-
-
-
 let apiKey = "b1b60e90e3e1e584041678da21127779";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Cape Town&appid=${apiKey}&units=metric`
+let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Cape Town&appid=${apiKey}&units=metric`;
 
 axios.get(apiUrl).then(displayTemperature);
