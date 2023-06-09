@@ -33,34 +33,101 @@
           </div>
         </form>
         <div class="overview">
-      <h1 id="city"></h1>
-      <ul>
-        <li> Last updates: <span id="date"></span></li>
-        <li id="description"></li>
-      </ul>
+      <h1 id="city"> Sydney NSW, Australia </h1>
+      <span id="description">clouds</span>
+      <p>"Last update:
+        <span id="date">Friday 11:30</span>
+      </p>
         </div>
       <div class="row">
         <div class="col-6">
-          <div class="d-flex weather-temperature"></div>
+          <div class="clearfix">
           <img src="http://openweathermap.org/img/wn/50d@2x.png"
-           alt="Clear" id="icon" />
-          <div>
-          <strong id="temperature"></strong
+           alt="mist" 
+         class="weather-icon float-left" 
+         />
+          <div class="float-left weathe-forecast-temperature">
+          <strong><span id="temperature">14</span></strong
             ><span class="units"
             ><a href="#" id="celsius-link" class="active">˚C</a> | 
-            <a href="#" id"fahrenheit-link">˚F</a></span
+            <a href="#" id="fahrenheit-link" class="persive">˚F</a></span
             >
         </div>
         </div>
       </div>
         <div class="col-6">
           <ul>
-            <li>Humidity: <span id="humidity"></span>%</li>
-            <li>Windy: <span id="wind"></span>km/h</li>
+            <li>Humidity: 
+            <span id="humidity">80</span>%
+        </li>
+            <li>Windy: 
+            <span id="wind">5</span> km/h
+        </li>
           </ul>
         </div>
       </div>
-      </div class="weather-forecast" id="forecast"></div>
+      </div class="weather-forecast" id="forecast">
+      <div class="row">
+        <div class="col-2">
+            <img src="http://openweathermap.org/img/wn/04d@2x.png"
+            alt="broken cloud"
+            width="38px">
+        <div class="weather-forecast-temperature">
+        <span class="weather-forecast-temperature-max">18˚</span>
+        <span class="weather-forecast-temperature-min">8˚</span>
+      </div>
+    </div>
+    <div class="col-2">
+    <div class="weather-forecast-date">Sat</div>
+    <img src="http://openweathermap.org/img/wn/09d@2x.png"
+    alt="shower rain"
+    width="38px">
+    <div class="weather-forecast-temperature">
+    <span class="weather-forecast-temperature-max">23˚</span>
+    <span class="weather-forecast-temperature-min">11˚</span>
+    </div>
+    </div>
+    <div class="col-2">
+    <div class="weather-forecast-date">Sun</div>
+    <img src="http://openweathermap.org/img/wn/11d@2x.png"
+    alt="thunderstorm"
+    width="38px">
+    <div class="weather-forecast-temperature">
+<span class="weather-forecast-temperature-max">17˚</span>
+<span class="weather-forecast-temperature-mix">13˚</span>
+    </div>
+    </div>
+    <div class="col-2">
+    <div class="weather-forecast-date">Mon</div>
+    <img src="http://openweathermap.org/img/wn/10d@2x.png"
+    alt="rain"
+    width="38px">
+    <div class="weather-forecast-temeperature">
+    <span class="weather-forecast-temperature-max">16˚</span>
+    <span class="weather-forecast-temperature-mix">11˚</span>
+    </div>
+    </div>
+    <div class="col-2">
+    <div class="weather-forecast-date">Tue</div>
+    <img src="http://openweathermap.org/img/wn/13d@2x.png"
+    alt="snow"
+    width="38px">
+    <div class="weather-forecast-temperature">
+    <span class="weather-forecast-temperature-max">15˚</span>
+    <span class="weather-forecast-temperature-min">9˚</span>
+    </div>
+    </div>
+    <div class="col-2">
+    <div class="weather-forecast-date">Wed</div>
+    <img src="http://openweathermap.org/img/wn/01d@2x.png"
+    alt="clear sky"
+    width="38px">
+    <div class="weather-forecast-temperature">
+    <span class="weather-forecast-temeprature-max">17˚</span>
+    <span class="weather-forecast-temperature-mix">10˚</span>
+    </div>
+    </div>
+      </div>
       <small>
        <a
         href="https://github.com/Siviwe82/Weather"
