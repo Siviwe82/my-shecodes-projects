@@ -38,11 +38,10 @@ function displayForecast(response) {
     if (index < 6) {
       forecastHTML =
         forecastHTML +
-        (
+        `
           <div class="col-2">
             <div class="weather-forecast-date">
-              ${formatDay(forecastDay.dt)}
-            </div>
+              ${formatDay(forecastDay.dt)}</div>
             <img
               src="http://openweathermap.org/img/wn/${
             forecastDay.weather[0].icon
@@ -52,16 +51,12 @@ function displayForecast(response) {
             />
             <div class="weather-forecast-temperatures">
               <span class="weather-forecast-temperature-max">
-                {" "}
-                ${Math.round(forecastDay.temp.max)}°{" "}
-              </span>
+                ${Math.round(forecastDay.temp.max)}°</span>
               <span class="weather-forecast-temperature-min">
-                {" "}
-                ${Math.round(forecastDay.temp.min)}°{" "}
-              </span>
+                ${Math.round(forecastDay.temp.min)}°</span>
             </div>
           </div>
-        );
+        `;
     }
   });
 
@@ -139,7 +134,7 @@ function displayCelsiusTemperature(event) {
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
 
-let dateElement = document.querySelector("h6");
+let dateElement = document.querySelector("#date");
 let currentTime = new Date();
 dateElement.innerHTML = formatDate(currentTime);
 
@@ -157,4 +152,4 @@ fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
-search("New York");
+searchCity("New York");
